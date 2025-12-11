@@ -362,6 +362,10 @@
                         <h3>Alfa</h3>
                         <p class="text-danger"><?= $jumlahKehadiranSiswa['alfa']; ?></p>
                     </div>
+                    <div class="attendance-stat">
+                        <h3>Libur</h3>
+                        <p class="text-dark"><?= $jumlahKehadiranSiswa['libur']; ?></p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -90,7 +90,7 @@ class PresensiSiswaModel extends Model implements PresensiInterface
          'right'
       );
 
-      if ($idKehadiran == '4') {
+      if ($idKehadiran == '4 ') {
          $result = $this->findAll();
 
          $filteredResult = [];

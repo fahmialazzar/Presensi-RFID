@@ -222,7 +222,7 @@ $context = $ctx ?? 'dashboard';
             <li class="nav-item <?= (uri_string() == 'admin/attendance-settings') ? 'active' : '' ?>">
                <a class="nav-link" href="<?= base_url('admin/attendance-settings'); ?>">
                   <i class="material-icons">schedule</i>
-                  <p>Pengaturan Waktu Absen</p>
+                  <p>Pengaturan Waktu Presensi</p>
                </a>
             </li>
          <?php endif; ?>

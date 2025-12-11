@@ -154,8 +154,8 @@ function kehadiran($kehadiran): array
          break;
       case 5:
       default:
-         $color = 'disabled';
-         $text = 'Belum tersedia';
+         $color = 'dark';
+         $text = 'Libur';
          break;
    }
 

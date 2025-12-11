@@ -91,7 +91,8 @@ class GenerateLaporan extends BaseController
 
       foreach ($period as $value) {
          // kecualikan hari sabtu dan minggu
-         if (!($value->format('D') == 'Sat' || $value->format('D') == 'Sun')) {
+         // hanya hilangkan minggu
+            if ($value->format('D') != 'Sun') {
             $lewat = Time::parse($value->format('Y-m-d'))->isAfter(Time::today());
 
             $absenByTanggal = $this->presensiSiswaModel
@@ -167,7 +168,7 @@ class GenerateLaporan extends BaseController
 
       foreach ($period as $value) {
          // kecualikan hari sabtu dan minggu
-         if (!($value->format('D') == 'Sat' || $value->format('D') == 'Sun')) {
+         if ($value->format('D') != 'Sun') {
             $lewat = Time::parse($value->format('Y-m-d'))->isAfter(Time::today());
 
             $absenByTanggal = $this->presensiGuruModel

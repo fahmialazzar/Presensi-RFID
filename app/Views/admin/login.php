@@ -79,7 +79,6 @@
                 </div>
                     </br>
                 <button type="submit" class="btn btn-primary w-100">Login</button>
-                <p class="mt-3"><a href="<?= url_to('forgot') ?>">Lupa Password?</a></p>
             </form>
         </div>
         <div class="login-image"></div>

@@ -87,14 +87,16 @@ class Dashboard extends BaseController
             'hadir' => count($this->presensiSiswaModel->getPresensiByKehadiran('1', $today)),
             'sakit' => count($this->presensiSiswaModel->getPresensiByKehadiran('2', $today)),
             'izin' => count($this->presensiSiswaModel->getPresensiByKehadiran('3', $today)),
-            'alfa' => count($this->presensiSiswaModel->getPresensiByKehadiran('4', $today))
+            'alfa' => count($this->presensiSiswaModel->getPresensiByKehadiran('4', $today)),
+            'libur' => count($this->presensiSiswaModel->getPresensiByKehadiran('5', $today))
          ],
 
          'jumlahKehadiranGuru' => [
             'hadir' => count($this->presensiGuruModel->getPresensiByKehadiran('1', $today)),
             'sakit' => count($this->presensiGuruModel->getPresensiByKehadiran('2', $today)),
             'izin' => count($this->presensiGuruModel->getPresensiByKehadiran('3', $today)),
-            'alfa' => count($this->presensiGuruModel->getPresensiByKehadiran('4', $today))
+            'alfa' => count($this->presensiGuruModel->getPresensiByKehadiran('4', $today)),
+            'libur' => count($this->presensiGuruModel->getPresensiByKehadiran('5', $today))
          ],
 
          'petugas' => $this->petugasModel->getAllPetugas(),

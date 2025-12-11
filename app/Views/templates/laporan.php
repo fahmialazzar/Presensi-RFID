@@ -1,7 +1,7 @@
 <html>
 
 <head>
-   <title>Rekap absen <?= $grup ?></title>
+   <title>Rekap presensi <?= $grup ?></title>
    <style>
       body {
          font-family: Arial, Helvetica, sans-serif;

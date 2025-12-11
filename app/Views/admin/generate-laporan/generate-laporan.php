@@ -400,14 +400,14 @@
     <div class="laporan-main-card">
         <div class="laporan-main-header">
             <h4>Generate Laporan</h4>
-            <p>Generate laporan absensi siswa dan guru</p>
+            <p>Generate laporan presensi siswa dan guru</p>
         </div>
         
         <div class="laporan-main-body">
             <div class="laporan-grid">
                 <!-- Siswa Section -->
                 <div class="laporan-section-card siswa">
-                    <h4>Laporan Absen Siswa</h4>
+                    <h4>Laporan Presensi Siswa</h4>
                     
                     <form action="<?= base_url('admin/laporan/siswa'); ?>" method="post">
                         <!-- Date Input -->
@@ -464,7 +464,7 @@
                 <!-- Guru Section -->
                 <?php if (user()->toArray()['is_superadmin'] ?? '0' == '1') : ?>
                 <div class="laporan-section-card guru">
-                    <h4>Laporan Absen Guru</h4>
+                    <h4>Laporan Presensi Guru</h4>
                     
                     <p class="info-text">
                         Total jumlah guru: <b><?= count($guru); ?></b>
